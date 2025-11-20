@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Complete Restaurant Test Suite" parallel="tests" thread-count="3">
+    <test name="Main Tests">
+        <classes>
+            <class name="com.restaurant.tests.MainTests"/>
+        </classes>
+    </test>
+
+    <test name="Auth Tests">
+        <classes>
+            <class name="com.restaurant.tests.AuthTests"/>
+        </classes>
+    </test>
+
+    <test name="Profile Tests">
+        <classes>
+            <class name="com.restaurant.tests.ProfileTests"/>
+        </classes>
+    </test>
+
+    <test name="Menu Tests">
+        <classes>
+            <class name="com.restaurant.tests.MenuTests"/>
+        </classes>
+    </test>
+
+    <test name="Order Tests">
+        <classes>
+            <class name="com.restaurant.tests.OrderTests"/>
+        </classes>
+    </test>
+
+    <test name="Reservation Tests">
+        <classes>
+            <class name="com.restaurant.tests.ReservationTests"/>
+        </classes>
+    </test>
+
+    <test name="Admin Tests">
+        <classes>
+            <class name="com.restaurant.tests.AdminTests"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Order Test Suite" parallel="false">
+    <test name="Order Management Tests">
+        <classes>
+            <class name="com.restaurant.tests.OrderTests">
+                <methods>
+                    <include name="testEmptyOrderPage"/>
+                    <include name="testCartWithItem"/>
+                    <include name="testCreateOrderPostWithItems"/>
+                    <include name="testViewOrderList"/>
+                    <include name="testViewOrderDetails"/>
+                    <include name="testCancelOrderSuccessfully"/>
+                    <include name="testCancelOrderNonExistOrUnauthorized"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

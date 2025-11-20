@@ -12,7 +12,7 @@ public class CSRFExtractor {
 
     public static String getCsrfTokenFromPage(String url, String sessionId) {
         Response response = given()
-                .cookies("session", sessionId)
+                .cookie("session", sessionId)
                 .get(url);
         return TestUtils.extractCsrfToken(response);
     }

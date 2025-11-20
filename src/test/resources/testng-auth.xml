@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Authentication Test Suite" parallel="false">
+    <test name="Authentication Tests">
+        <classes>
+            <class name="com.restaurant.tests.AuthTests">
+                <methods>
+                    <include name="testRegisterGet"/>
+                    <include name="testRegisterPostWithCsrf"/>
+                    <include name="testLoginGet"/>
+                    <include name="testLoginPost"/>
+                    <include name="testLogout"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

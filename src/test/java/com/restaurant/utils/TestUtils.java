@@ -1,6 +1,5 @@
 package com.restaurant.utils;
 
-import io.restassured.http.Cookie;
 import io.restassured.response.Response;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -8,6 +7,8 @@ import org.jsoup.select.Elements;
 
 import java.util.Map;
 import java.util.HashMap;
+
+import static io.restassured.RestAssured.given;
 
 public class TestUtils {
 
@@ -40,5 +41,23 @@ public class TestUtils {
     public static String getFutureTime(int days) {
         java.time.LocalDateTime future = java.time.LocalDateTime.now().plusDays(days);
         return future.format(java.time.format.DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm"));
+    }
+
+    // 统一的方法 - 使用完整URL和可选的sessionId
+    public static String getCsrfTokenFromPage(String fullUrl) {
+        Response response = given().get(fullUrl);
+        return extractCsrfToken(response);
+    }
+
+    public static String getCsrfTokenFromPage(String fullUrl, String sessionId) {
+        Response response = given()
+                .cookie("session", sessionId)
+                .get(fullUrl);
+        return extractCsrfToken(response);
+    }
+
+    // 如果需要基于baseUrl和path的方法，可以这样写：
+    public static String getCsrfTokenFromPage(String baseUrl, String path, String sessionId) {
+        return getCsrfTokenFromPage(baseUrl + path, sessionId);
     }
 }

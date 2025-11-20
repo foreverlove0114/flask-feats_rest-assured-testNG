@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "nickname": "testuser_1234",
+      "email": "testuser_1234@email.com",
+      "contact": "0123456789",
+      "fullAddress": "123 street",
+      "password": "test123",
+      "role": "user"
+    },
+    {
+      "nickname": "testuser_5678",
+      "email": "testuser_5678@email.com",
+      "contact": "9876543210",
+      "fullAddress": "456 avenue",
+      "password": "test456",
+      "role": "user"
+    },
+    {
+      "nickname": "superadmin",
+      "email": "admin@restaurant.com",
+      "contact": "5551234567",
+      "fullAddress": "789 boulevard",
+      "password": "admin123",
+      "role": "admin"
+    }
+  ]
+}

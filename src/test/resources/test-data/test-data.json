@@ -1,0 +1,38 @@
+{
+  "testUsers": {
+    "regularUser": {
+      "nickname": "testuser_1234",
+      "email": "testuser_1234@email.com",
+      "contact": "0123456789",
+      "fullAddress": "123 street",
+      "password": "test123"
+    },
+    "adminUser": {
+      "nickname": "superadmin",
+      "password": "admin123"
+    }
+  },
+  "menuItems": {
+    "testPizza": {
+      "name": "Test Pizza",
+      "ingredients": "Cheese, Tomato, Dough",
+      "description": "A delicious test pizza",
+      "price": 25,
+      "weight": "300"
+    }
+  },
+  "reservations": {
+    "validReservation": {
+      "tableType": "2",
+      "timeOffsetDays": 1
+    }
+  },
+  "contactMessages": {
+    "validMessage": {
+      "name": "testuser",
+      "email": "testuser@gmail.com",
+      "subject": "Complain about...",
+      "message": "I wanna complain about..."
+    }
+  }
+}
